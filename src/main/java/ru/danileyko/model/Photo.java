@@ -1,6 +1,7 @@
 package ru.danileyko.model;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -23,6 +24,19 @@ public class Photo {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user_id;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category_id;
+
+    public Category getCategory_id() {
+        return category_id;
+    }
+
+    public void setCategory_id(Category category_id) {
+        this.category_id = category_id;
+    }
+
 
     public int getId() {
         return id;

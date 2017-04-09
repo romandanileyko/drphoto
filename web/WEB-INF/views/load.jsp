@@ -23,6 +23,9 @@
 
             <input type="text" name="name" id="name"></input>
 
+             <form:select path="category_id.id" >
+                <form:options items="${category}" itemValue="id" itemLabel="name"  />
+             </form:select>
 
             <input type="file" name="file" id="file"></input>
 

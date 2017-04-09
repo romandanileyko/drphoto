@@ -16,24 +16,27 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
+import ru.danileyko.model.Category;
 import ru.danileyko.model.Photo;
 import ru.danileyko.model.User;
-import ru.danileyko.service.PhotoService;
-import ru.danileyko.service.SecurityService;
-import ru.danileyko.service.UserService;
-import ru.danileyko.service.UserServiceImpl;
+import ru.danileyko.service.*;
 import ru.danileyko.validator.FileValidator;
 import ru.danileyko.validator.UserValidator;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.beans.PropertyEditorSupport;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by danil on 11.02.2017.
@@ -55,6 +58,8 @@ public class IndexController {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private PhotoService photoService;
+    @Autowired
+    private CategoryService categoryService;
 
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String showIndexPage(ModelMap modelMap)
@@ -124,11 +129,19 @@ public class IndexController {
     public String loadPage(Model model)
     {
         List<Photo> photos = new ArrayList<Photo>();
+        List<Category> categoryList = new ArrayList<Category>();
         List<String> base64String = new ArrayList<String>();
+        Map<Integer,String> map = new HashMap<>();
         model.addAttribute("fileUpload",new Photo());
+
         log.info("Logged user is"+getPrincipal());
         log.info("User is"+userService.getUser(getPrincipal()));
         photos = photoService.getPhoto(userService.getUser(getPrincipal()));
+        categoryList = categoryService.getAllCategory();
+        for (Category item: categoryList){
+            map.put(item.getId(),item.getName());
+        }
+        model.addAttribute("category",categoryList);
         model.addAttribute("photo",photos);
         if(photos!=null)
         {
@@ -157,18 +170,21 @@ public class IndexController {
             return "load";
         }
         User user = userService.getUser(getPrincipal());
+        Category category = categoryService.getAllCategory().get(1);
         String title = photo.getName();
+        Integer categoryId = photo.getCategory_id().getId();
         int ownerId = user.getId();
         try
         {
             byte[] photoBinary = file.getBytes();
-           // byte[] photoBinary = photo.getPhoto();
             log.info("Title is " + title);
             log.info("File is "  + photoBinary);
             log.info("Owner is " + ownerId);
+            log.info("Selected category is " + categoryId);
             photo.setName(title);
             photo.setPhoto(photoBinary);
             photo.setUser_id(user);
+            photo.setCategory_id(photo.getCategory_id());
             photoService.save(photo);
             log.info("Photo is saved.");
         } catch (Exception e)
