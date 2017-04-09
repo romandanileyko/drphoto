@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d49b2d82-25ad-4f11-b778-f1bb9c663790" name="Default" comment="was added 'Category' entity">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CategoryDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CategoryDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/config/WebConfig.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/controller/IndexController.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/controller/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/model/Photo.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/model/Photo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/controller/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/model/Photo.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/model/Photo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/82e5c52c-041b-45fe-8a33-a6cd2917156d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/82e5c52c-041b-45fe-8a33-a6cd2917156d.xml" />
+    <list default="true" id="d49b2d82-25ad-4f11-b778-f1bb9c663790" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/views/load.jsp" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/views/load.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/load.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/load.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1354,7 +1338,7 @@
       <workItem from="1491643238284" duration="2041000" />
       <workItem from="1491645338861" duration="846000" />
       <workItem from="1491646230417" duration="680000" />
-      <workItem from="1491647407072" duration="19543000" />
+      <workItem from="1491647407072" duration="19565000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1491645626821</created>
@@ -1363,11 +1347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491645626821</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="was added 'Category' entity">
+      <created>1491737812801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491737812801</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171388000" />
+    <option name="totallyTimeSpent" value="171410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
