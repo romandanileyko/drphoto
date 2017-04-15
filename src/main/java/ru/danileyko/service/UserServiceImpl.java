@@ -17,6 +17,8 @@ import ru.danileyko.dao.UserDAO;
 import ru.danileyko.model.Role;
 import ru.danileyko.model.User;
 
+import java.util.List;
+
 /**
  * Created by danil on 24.02.2017.
  */
@@ -39,6 +41,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUser(String login) {
         return userDAO.getUser(login);
+    }
+
+    @Override
+    public List<User> getAllUsers() {
+        return userDAO.userList();
+    }
+
+    @Override
+    public void delete(int id) {
+        userDAO.delete(id);
     }
 
     @Override

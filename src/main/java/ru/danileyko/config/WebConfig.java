@@ -71,7 +71,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         return localSessionFactoryBean;
     }
 
-    @Bean(name = "dataSource")
+    @Bean(name = "dataSource",destroyMethod = "")
     public DataSource dataSource() {
         JndiDataSourceLookup dataSourceLookup = new JndiDataSourceLookup();
         DataSource dataSource = dataSourceLookup.getDataSource("jdbc/drphoto");

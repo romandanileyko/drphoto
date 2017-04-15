@@ -26,6 +26,26 @@ public class UserDAOImpl implements UserDAO {
     private Session openSession(){
         return sessionFactory.getCurrentSession();
     }
+
+    @Override
+    public void delete(int id) {
+        Query deleteQuery = openSession().createQuery("delete from User where id=?");
+        deleteQuery.setParameter(0,id);
+        deleteQuery.executeUpdate();
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public List<User> userList() {
+        List<User> allUsers = new ArrayList<>();
+        Query query = openSession().createQuery("from User ");
+        allUsers = query.list();
+        if (allUsers.size()>0)
+            return allUsers;
+        else
+            return null;
+    }
+
     @Override
     @SuppressWarnings("unchecked")
     public User getUser(String login) {

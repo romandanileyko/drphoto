@@ -88,8 +88,11 @@ public class IndexController {
     @RequestMapping(value = "/admin",method = RequestMethod.GET)
     public String adminPage(ModelMap modelMap)
     {
+        List<User> allUsers = new ArrayList<>();
         log.info("Show admin page. User is "+ getPrincipal());
         modelMap.addAttribute("user",getPrincipal());
+        allUsers = userService.getAllUsers();
+        modelMap.addAttribute("userlist",allUsers);
         return "admin";
     }
 
@@ -200,6 +203,14 @@ public class IndexController {
         Integer id = Integer.parseInt(photoId);
         photoService.deletePhotoById(id);
         log.info("Photo with id= "+id+" was deleted.");
+    }
+
+    @RequestMapping(value = "/delete-user-{id}", method = RequestMethod.GET)
+    public @ResponseBody String deleyeUser(@PathVariable String id) {
+        Integer userId = Integer.parseInt(id);
+        userService.delete(userId);
+        log.info("User was deleted");
+        return "User was deleted!";
     }
 
     //Получение имени пользователя.
