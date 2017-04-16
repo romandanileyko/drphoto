@@ -12,4 +12,6 @@ public interface UserService {
     public List<User> getAllUsers();
     public void save(User user);
     public void delete(int id);
+    public void userLock(int id);
+    public void userUnLock(int id);
 }

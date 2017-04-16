@@ -54,6 +54,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void userLock(int id) {
+        userDAO.userLock(id);
+    }
+
+    @Override
+    public void userUnLock(int id) {
+        userDAO.userUnLock(id);
+    }
+
+    @Override
     public void save(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRoles(roleDAO.getRole(1));//id=1 for ROLE_USER

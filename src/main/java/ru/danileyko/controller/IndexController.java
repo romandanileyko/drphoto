@@ -212,6 +212,16 @@ public class IndexController {
         log.info("User was deleted");
         return "User was deleted!";
     }
+    @RequestMapping(value = "/disable-user-{id}",method = RequestMethod.GET)
+    public @ResponseBody void userLock(@PathVariable String id){
+        Integer userId = Integer.parseInt(id);
+        userService.userLock(userId);
+    }
+    @RequestMapping(value = "/enable-user-{id}",method = RequestMethod.GET)
+    public @ResponseBody void userUnLock(@PathVariable String id){
+        Integer userId = Integer.parseInt(id);
+        userService.userUnLock(userId);
+    }
 
     //Получение имени пользователя.
 

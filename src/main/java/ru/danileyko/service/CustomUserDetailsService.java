@@ -38,7 +38,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         return new User(
                 domainUser.getUsername(),
                 domainUser.getPassword(),
-                enabled,
+                domainUser.isEnabled(),
                 accountNonExpired,
                 credentialsNonExpired,
                 accountNonLocked,

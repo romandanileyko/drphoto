@@ -12,4 +12,6 @@ public interface UserDAO {
     public List<User> userList();
     public void save(User user);
     public void delete(int id);
+    public void userLock(int id);
+    public void userUnLock(int id);
 }

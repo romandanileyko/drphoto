@@ -28,6 +28,20 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
+    public void userLock(int id) {
+        Query lock = openSession().createQuery("update from User set enabled='0' where id=?");
+        lock.setParameter(0,id);
+        lock.executeUpdate();
+    }
+
+    @Override
+    public void userUnLock(int id) {
+        Query unLock = openSession().createQuery("update from User set enabled='1' where id=?");
+        unLock.setParameter(0,id);
+        unLock.executeUpdate();
+    }
+
+    @Override
     public void delete(int id) {
         Query deleteQuery = openSession().createQuery("delete from User where id=?");
         deleteQuery.setParameter(0,id);

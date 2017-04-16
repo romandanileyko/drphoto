@@ -21,7 +21,9 @@
         <tr>
             <th>Username</th>
             <th>Status</th>
+            <th>Role</th>
             <th>Delete</th>
+            <th>Enable/Disable</th>
         </tr>
         </thead>
         <tbody>
@@ -29,7 +31,16 @@
             <tr>
                 <td>${user.username}</td>
                 <td>${user.enabled}</td>
+                <td>${user.roles.role}</td>
                 <td><a id="delete" href="<c:url value='/delete-user-${user.id}'/>">Удалить!</a></td>
+                <td><c:choose>
+                        <c:when test="${user.enabled=='true'}">
+                            <a id="disable" href="<c:url value='/disable-user-${user.id}'/>">Disable</a>
+                        </c:when>
+                         <c:when test="${user.enabled=='false'}">
+                            <a id="enable" href="<c:url value='/enable-user-${user.id}'/>">Enable</a>
+                        </c:when>
+                </c:choose></td>
         </c:forEach>
         </tbody>
     </table>
@@ -38,6 +49,20 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('a#delete').click(function (event) {
+            event.preventDefault();
+            $.ajax({
+                url:$(this).attr('href'),
+                data:{id:$(this).attr('value')}
+            })
+        })
+        $('a#disable').click(function (event) {
+            event.preventDefault();
+            $.ajax({
+                url:$(this).attr('href'),
+                data:{id:$(this).attr('value')}
+            })
+        })
+        $('a#enable').click(function (event) {
             event.preventDefault();
             $.ajax({
                 url:$(this).attr('href'),
