@@ -41,6 +41,18 @@ public class PhotoDAOImpl implements PhotoDAO {
             return null;
     }
 
+    @Override
+    public Photo getPhotoById(int id) {
+        List<Photo> onePhoto = new ArrayList<>();
+        Query query = openSession().createQuery("from Photo where id=?");
+        query.setParameter(0,id);
+         onePhoto=query.list();
+         if(onePhoto.size()>0)
+             return onePhoto.get(0);
+         else
+            return null;
+    }
+
     //Get All photo
     @Override
     @SuppressWarnings("unchecked")

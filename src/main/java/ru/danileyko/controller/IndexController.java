@@ -1,11 +1,8 @@
 package ru.danileyko.controller;
 
-import com.sun.tracing.dtrace.ModuleAttributes;
-import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -16,11 +13,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import ru.danileyko.model.Category;
 import ru.danileyko.model.Photo;
 import ru.danileyko.model.User;
@@ -30,8 +24,6 @@ import ru.danileyko.validator.UserValidator;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.beans.PropertyEditorSupport;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -223,6 +215,20 @@ public class IndexController {
         userService.userUnLock(userId);
     }
 
+    @RequestMapping(value = "/one-photo-{id}",method = RequestMethod.GET)
+    public String onePhoto(@PathVariable String id,ModelMap modelMap){
+        int photoId = Integer.parseInt(id);
+        Photo photo = photoService.getOnePhoto(photoId);
+        modelMap.addAttribute("user",getPrincipal());
+        modelMap.addAttribute("photoObject",photo);//for display name
+        byte[] bytes64 = Base64.encode(photo.getPhoto());
+        try {
+            String photoStr = new String(bytes64, "UTF-8");
+            modelMap.addAttribute("onePhoto",photoStr);//for display image
+        }catch (Exception e){System.out.print(e);}
+        log.info("photoId: "+id);
+        return "photo";
+    }
     //Получение имени пользователя.
 
     private String getPrincipal(){

@@ -71,8 +71,8 @@
 </div>
 <div>
   <c:forEach var="listPhotoAll" items="${allPhoto}" varStatus="status" >
-    <figure style="float: left">
-      <img alt="${allPhotos[status.index].name}"  src="data:image/jpg;base64,<c:out value='${listPhotoAll}'/>" width="300" height="200"/>
+    <figure style="float: left"><a href=<c:url value='/one-photo-${allPhotos[status.index].id}'/>>
+      <img alt="${allPhotos[status.index].name}"  src="data:image/jpg;base64,<c:out value='${listPhotoAll}'/>" width="300" height="200"/></a>
       <figcaption><c:out value="${allPhotos[status.index].name}"/></figcaption>
     </figure>
   </c:forEach>

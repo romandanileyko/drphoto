@@ -13,4 +13,5 @@ public interface PhotoService {
     public void deletePhotoById(int id);
     public List<Photo> getPhoto(User user);
     public List<Photo> getAllPhoto();
+    public Photo getOnePhoto(int id);
 }

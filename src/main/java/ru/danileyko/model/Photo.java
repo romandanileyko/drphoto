@@ -15,8 +15,7 @@ public class Photo {
     private int id;
     @Column(name = "name")
     private String name;
-    @Column(name = "comment_id")
-    private int comment_id;
+
     @Lob
     @Column(name = "file")
     private byte[] photo;
@@ -54,14 +53,6 @@ public class Photo {
         this.name = name;
     }
 
-    public int getComment_id() {
-        return comment_id;
-    }
-
-    public void setComment_id(int comment_id) {
-        this.comment_id = comment_id;
-    }
-
     public byte[] getPhoto() {
         return photo;
     }
@@ -77,4 +68,5 @@ public class Photo {
     public void setUser_id(User user_id) {
         this.user_id = user_id;
     }
+
 }

@@ -13,4 +13,5 @@ public interface PhotoDAO {
     public void delete(int id);
     public List<Photo> getPhoto(User user);
     public List<Photo> getAllPhoto();
+    public Photo getPhotoById(int id);
 }

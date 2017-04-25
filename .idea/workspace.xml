@@ -2,14 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d49b2d82-25ad-4f11-b778-f1bb9c663790" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/controller/IndexController.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/controller/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/PhotoDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/PhotoDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/PhotoDAOImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/PhotoDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/UserDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/UserDAOImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/dao/UserDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/model/Photo.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/model/Photo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/CustomUserDetailsService.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/CustomUserDetailsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/PhotoService.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/PhotoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/PhotoServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/PhotoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/UserService.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/classes/ru/danileyko/service/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/controller/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/PhotoDAO.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/PhotoDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/PhotoDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/PhotoDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/UserDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/dao/UserDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/model/Photo.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/model/Photo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/service/CustomUserDetailsService.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/service/CustomUserDetailsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/service/PhotoService.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/service/PhotoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/service/PhotoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/service/PhotoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/danileyko/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/ru/danileyko/service/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/82e5c52c-041b-45fe-8a33-a6cd2917156d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/82e5c52c-041b-45fe-8a33-a6cd2917156d.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/views/admin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/views/admin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/drphoto_war_exploded/WEB-INF/views/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CustomUserDetailsService.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CustomUserDetailsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoService.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,143 +65,78 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="photo@109.123.152.119" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="user" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="photo@109.123.152.119" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="category" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="223" column="5" lean-forward="true" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
+            <state relative-caret-position="-3900">
+              <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2170#2177#0" expanded="true" />
+                <element signature="e#2233#2241#0" expanded="true" />
+                <element signature="e#4588#4595#0" expanded="true" />
+                <element signature="e#4650#4660#0" expanded="true" />
+                <element signature="e#4713#4721#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/SecurityService.java">
+      <file leaf-file-name="PhotoDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+            <state relative-caret-position="211">
+              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/SecurityServiceImpl.java">
+      <file leaf-file-name="PhotoServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomUserDetailsService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CustomUserDetailsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSecurityConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/config/WebSecurityConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityWebApplicationInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/config/SecurityWebApplicationInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/config/WebConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="73" column="47" lean-forward="false" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="525">
+              <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
               <folding>
-                <element signature="e#1657#1658#0" expanded="true" />
-                <element signature="e#1691#1692#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1777#1778#0" expanded="true" />
-                <element signature="e#1829#1830#0" expanded="true" />
-                <element signature="e#1867#1868#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/photo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding>
+                <element signature="n#src#0;n#img#0;n#figure#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="880">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,13 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/ru/danileyko/danileyko/config/WebInit.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/danileyko/config/WebInit.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/danileyko/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/danileyko/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/danileyko/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestIndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/config/SecurityInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/config/SecurityWebApplicationInitializer.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/logout.jsp" />
@@ -231,30 +184,38 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/views/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/SecurityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/SecurityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/config/WebSecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/model/User.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/config/WebInit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CategoryDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CategoryDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/load.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CustomUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/photo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CommentsDAOImol.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CommentsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CommentsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/service/CommentsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Comments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CommentsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java" />
       </list>
     </option>
   </component>
@@ -331,7 +292,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -672,8 +634,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1334,7 +1295,8 @@
       <workItem from="1491647407072" duration="20889000" />
       <workItem from="1492238072900" duration="1823000" />
       <workItem from="1492262358494" duration="16000" />
-      <workItem from="1492262408118" duration="6175000" />
+      <workItem from="1492262408118" duration="8060000" />
+      <workItem from="1492915608243" duration="20277000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1491645626821</created>
@@ -1364,11 +1326,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492265679573</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="user management">
+      <created>1492319519598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1492319519614</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180748000" />
+    <option name="totallyTimeSpent" value="202910000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1381,7 +1350,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1391,7 +1360,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13251074" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13251074" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1404,12 +1373,13 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37411764" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2950644" sideWeight="0.2857143" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2950644" sideWeight="0.71428573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29935622" sideWeight="0.29590017" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29935622" sideWeight="0.70409983" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25804722" sideWeight="0.1641791" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1418,7 +1388,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1449,7 +1418,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="was added 'Category' entity" />
     <MESSAGE value="user delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="user delete" />
+    <MESSAGE value="user management" />
+    <option name="LAST_COMMIT_MESSAGE" value="user management" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1462,18 +1432,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/danileyko/danileyko/config/WebConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/daileyko/config/ru/danileyko/controller/IndexController.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/danileyko/danileyko/config/WebInit.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestIndexController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/config/SecurityInit.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.1.RELEASE/spring-security-config-4.2.1.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configuration/AuthenticationConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/logout.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1538,14 +1496,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" />
     <entry file="dbDummy://dbtable:/3dffe1fa/82e5c52c-041b-45fe-8a33-a6cd2917156d/photo.role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1605,14 +1563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2464">
@@ -1639,112 +1589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CategoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#823#824#0" expanded="false" />
-            <element signature="e#848#849#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-            <element signature="e#940#941#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1073#1074#0" expanded="false" />
-            <element signature="e#1106#1107#0" expanded="false" />
-            <element signature="e#1155#1156#0" expanded="false" />
-            <element signature="e#1199#1200#0" expanded="false" />
-            <element signature="e#1231#1232#0" expanded="false" />
-            <element signature="e#1259#1260#0" expanded="false" />
-            <element signature="e#1301#1302#0" expanded="false" />
-            <element signature="e#1335#1336#0" expanded="false" />
-            <element signature="e#1367#1368#0" expanded="false" />
-            <element signature="e#1397#1398#0" expanded="false" />
-            <element signature="e#1441#1442#0" expanded="false" />
-            <element signature="e#1479#1480#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-            <element signature="e#474#475#0" expanded="false" />
-            <element signature="e#502#503#0" expanded="false" />
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#560#561#0" expanded="false" />
-            <element signature="e#600#601#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#703#704#0" expanded="false" />
-            <element signature="e#756#757#0" expanded="false" />
-            <element signature="e#796#797#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#468#469#0" expanded="false" />
-            <element signature="e#519#520#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CategoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -1756,34 +1600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-589">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/load.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-483">
           <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1817,21 +1637,13 @@
         <state relative-caret-position="22">
           <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1741#1742#0" expanded="false" />
+            <element signature="e#1777#1778#0" expanded="false" />
+            <element signature="e#1829#1830#0" expanded="false" />
+            <element signature="e#1867#1868#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1839,7 +1651,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1847,25 +1661,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
           <caret line="73" column="47" lean-forward="false" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/config/WebSecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="223" column="5" lean-forward="true" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1877,19 +1693,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/SecurityServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="264">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CustomUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="452">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/SecurityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1760">
+          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#a#0;n#figure#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CategoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CommentsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="e#468#469#0" expanded="false" />
+            <element signature="e#519#520#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/photo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#figure#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/Comments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/PhotoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding>
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CommentsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/PhotoDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/dao/CommentsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/service/CommentsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/model/Photo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danileyko/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3900">
+          <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2170#2177#0" expanded="true" />
+            <element signature="e#2233#2241#0" expanded="true" />
+            <element signature="e#4588#4595#0" expanded="true" />
+            <element signature="e#4650#4660#0" expanded="true" />
+            <element signature="e#4713#4721#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
