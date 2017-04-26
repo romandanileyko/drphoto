@@ -28,6 +28,9 @@ public class Photo {
     @JoinColumn(name = "category_id")
     private Category category_id;
 
+    @OneToMany(mappedBy = "id_photo")
+    private List<Comment> commentList;
+
     public Category getCategory_id() {
         return category_id;
     }
@@ -69,4 +72,11 @@ public class Photo {
         this.user_id = user_id;
     }
 
+    public List<Comment> getCommentList() {
+        return commentList;
+    }
+
+    public void setCommentList(List<Comment> commentList) {
+        this.commentList = commentList;
+    }
 }

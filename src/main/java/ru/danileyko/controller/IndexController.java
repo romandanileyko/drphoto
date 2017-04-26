@@ -16,6 +16,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.danileyko.model.Category;
+import ru.danileyko.model.Comment;
 import ru.danileyko.model.Photo;
 import ru.danileyko.model.User;
 import ru.danileyko.service.*;
@@ -52,6 +53,8 @@ public class IndexController {
     private PhotoService photoService;
     @Autowired
     private CategoryService categoryService;
+    @Autowired
+    private CommentService commentService;
 
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String showIndexPage(ModelMap modelMap)
@@ -219,15 +222,32 @@ public class IndexController {
     public String onePhoto(@PathVariable String id,ModelMap modelMap){
         int photoId = Integer.parseInt(id);
         Photo photo = photoService.getOnePhoto(photoId);
+        List<Comment> commentList = commentService.getAllCommentByPhotoId(photo);
         modelMap.addAttribute("user",getPrincipal());
         modelMap.addAttribute("photoObject",photo);//for display name
+        modelMap.addAttribute("commentList",commentList);
         byte[] bytes64 = Base64.encode(photo.getPhoto());
         try {
             String photoStr = new String(bytes64, "UTF-8");
             modelMap.addAttribute("onePhoto",photoStr);//for display image
         }catch (Exception e){System.out.print(e);}
         log.info("photoId: "+id);
+
         return "photo";
+    }
+    @RequestMapping(value = "/addComment",method = RequestMethod.POST)
+    public @ResponseBody String addComent(@RequestParam("comment") String comment,
+                                          @RequestParam("photoId") String id) {
+        int photoId = Integer.parseInt(id);
+        String photoOwner = getPrincipal();
+        Comment comment1 = new Comment();
+        comment1.setId_photo(photoService.getOnePhoto(photoId));
+        comment1.setComment(comment);
+        comment1.setId_user(userService.getUser(photoOwner));
+        commentService.saveComment(comment1);
+        log.info("photoId: "+photoId+"photoOwner: "+photoOwner+" comment: "+comment);
+        log.info("Comment was saved.");
+        return "comment was saved.";
     }
     //Получение имени пользователя.
 

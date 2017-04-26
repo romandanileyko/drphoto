@@ -14,4 +14,5 @@ public interface UserService {
     public void delete(int id);
     public void userLock(int id);
     public void userUnLock(int id);
+    public User getUserById(int id);
 }

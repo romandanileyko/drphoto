@@ -73,4 +73,15 @@ public class UserDAOImpl implements UserDAO {
             return null;
     }
 
+    @Override
+    public User getUserById(int id) {
+        List<User> user;
+        Query query = openSession().createQuery("from User where id=?");
+        query.setParameter(0,id);
+        user = query.list();
+        if (user.size() > 0)
+            return user.get(0);
+        else
+            return null;
+    }
 }
