@@ -12,22 +12,24 @@
 <html>
 <head>
     <title>Photo</title>
+    <spring:url value="/resources/css/bootstrap.css" var="bootstrap"/>
+    <link href="${bootstrap}" rel="stylesheet" />
     <script src = "/resources/jquery/jquery-3.1.1.js"></script>
 </head>
 <body>
 <div id="owner">${user}</div>
     <div id="photo" align="center">
         <figure>
-            <img alt="${photoObject.name}"  src="data:image/jpg;base64,<c:out value='${onePhoto}'/>" width="600" height="400"/>
+            <img class="img-rounded" alt="${photoObject.name}"  src="data:image/jpg;base64,<c:out value='${onePhoto}'/>" width="600" height="400"/>
             <figcaption><c:out value="${photoObject.name}"/></figcaption>
         </figure>
     </div>
 
-    <div id="commentInput">
+    <div id="commentInput" class="col-xs-4">
         <c:if test="${user!='anonymousUser'}">
-            <textarea id="commenText"></textarea>
+            <textarea class="form-control col-xs-4" id="commenText"></textarea>
             <br>
-            <input id = "send" type="submit" value="Отправить"/>
+            <input class="btn btn-primary col-xs-4" id = "send" type="submit" value="Отправить"/>
             <span id="result"></span>
         </c:if>
     </div>

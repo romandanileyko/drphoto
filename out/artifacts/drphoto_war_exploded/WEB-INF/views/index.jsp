@@ -64,17 +64,24 @@
     <a href="/logout" id="logout">LogOut</a>
     <a href="register">Регистрация</a>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+    <c:if test="${param.error != null}">
+      <p>
+        Invalid username and password.
+      </p>
+    </c:if>
   </form>
 </div>
 <div>
   <a href="load">Загрузка</a>
 </div>
-<div>
+<div class="thumbnail">
   <c:forEach var="listPhotoAll" items="${allPhoto}" varStatus="status" >
-    <figure style="float: left"><a href=<c:url value='/one-photo-${allPhotos[status.index].id}'/>>
-      <img alt="${allPhotos[status.index].name}"  src="data:image/jpg;base64,<c:out value='${listPhotoAll}'/>" width="300" height="200"/></a>
-      <figcaption><c:out value="${allPhotos[status.index].name}"/></figcaption>
-    </figure>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+      <figure style="float: left"><a href=<c:url value='/one-photo-${allPhotos[status.index].id}'/>>
+        <img class="img-rounded" alt="${allPhotos[status.index].name}"  src="data:image/jpg;base64,<c:out value='${listPhotoAll}'/>" width="300" height="200"/></a>
+        <figcaption><c:out value="${allPhotos[status.index].name}"/></figcaption>
+      </figure>
+    </div>
   </c:forEach>
 </div>
 </body>

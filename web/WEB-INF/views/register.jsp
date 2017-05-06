@@ -16,6 +16,7 @@
     <script src="${contextPath}/resources/jquery/jquery-3.1.1.js"></script>
     <script src="${contextPath}/resources/js/bootstrap.js"></script>
     <spring:url value="/resources/css/bootstrap.css" var="bootstrap"/>
+    <link href="${bootstrap}" rel="stylesheet" />
 </head>
 <body>
 <div class="container">
@@ -39,7 +40,7 @@
         </spring:bind>
 
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        <button class="btn btn-primary " type="submit">Submit</button>
     </form:form>
 
 </div>
