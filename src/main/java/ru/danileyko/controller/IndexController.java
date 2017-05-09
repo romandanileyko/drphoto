@@ -2,6 +2,7 @@ package ru.danileyko.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.imgscalr.Scalr;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -23,9 +24,15 @@ import ru.danileyko.service.*;
 import ru.danileyko.validator.FileValidator;
 import ru.danileyko.validator.UserValidator;
 
+import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferByte;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -175,12 +182,20 @@ public class IndexController {
         try
         {
             byte[] photoBinary = file.getBytes();
+            InputStream inputStream = new ByteArrayInputStream(photoBinary);
+            BufferedImage bufferedImage = ImageIO.read(inputStream);
+            BufferedImage scaledImage = Scalr.resize(bufferedImage, Scalr.Method.QUALITY, Scalr.Mode.FIT_TO_WIDTH,600,Scalr.OP_ANTIALIAS);
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            ImageIO.write(scaledImage,"jpg",byteArrayOutputStream);
+            byteArrayOutputStream.flush();
+            byte[] scaledImgBytes = byteArrayOutputStream.toByteArray();
+            byteArrayOutputStream.close();
             log.info("Title is " + title);
             log.info("File is "  + photoBinary);
             log.info("Owner is " + ownerId);
             log.info("Selected category is " + categoryId);
             photo.setName(title);
-            photo.setPhoto(photoBinary);
+            photo.setPhoto(scaledImgBytes);
             photo.setUser_id(user);
             photo.setCategory_id(photo.getCategory_id());
             photoService.save(photo);
