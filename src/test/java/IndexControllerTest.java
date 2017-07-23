@@ -1,7 +1,16 @@
+import org.junit.Assert;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.ImportResource;
+import org.springframework.mock.jndi.SimpleNamingContextBuilder;
+import org.springframework.security.access.SecurityConfig;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.security.test.context.support.WithSecurityContext;
 import org.springframework.security.test.context.support.WithUserDetails;
@@ -14,24 +23,36 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+import ru.danileyko.config.TestContext;
 import ru.danileyko.config.WebConfig;
+import ru.danileyko.config.WebInit;
 import ru.danileyko.controller.IndexController;
 import ru.danileyko.model.Role;
 import ru.danileyko.model.User;
+import ru.danileyko.service.UserService;
+
+import javax.activation.DataSource;
+import javax.annotation.Resource;
+import javax.naming.NamingException;
+import java.lang.annotation.Target;
 
 /**
  * Created by danil on 26.03.2017.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(classes = WebConfig.class)
+@ContextConfiguration(classes = {TestContext.class})
 public class IndexControllerTest {
     @Autowired
     private WebApplicationContext webApplicationContext;
     private MockMvc mockMvc;
+
+    @Autowired
+    UserService userService;
 
     @Before
     public void setup()
@@ -40,12 +61,14 @@ public class IndexControllerTest {
         viewResolver.setViewClass(JstlView.class);
         viewResolver.setPrefix("/WEB-INF/views/");
         viewResolver.setSuffix(".jsp");
-        this.mockMvc = MockMvcBuilders.standaloneSetup(new IndexController()).setViewResolvers(viewResolver).build();
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(this.webApplicationContext).build();
     }
+
     @Test
-    @WithMockUser
-    public void testIndexPage() throws Exception{
-        this.mockMvc.perform(get("/"))
+    @WithMockUser(username = "admin",value = "admin")
+    @WithUserDetails("ROLE_ADMIN")
+    public void testGetIndexPage() throws Exception{
+        this.mockMvc.perform(get("/").header("host", "localhost:80"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"));
     }
@@ -54,9 +77,18 @@ public class IndexControllerTest {
     @WithMockUser(username = "admin",value = "admin")
     @WithUserDetails("ROLE_ADMIN")
     public void testGetAdminPage() throws Exception{
-        this.mockMvc.perform(get("/admin"))
+        this.mockMvc.perform(get("/admin").header("host", "localhost:80"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("admin"));
+
+        if(userService.getUser("junit")==null){
+            System.out.println("User not found!");
+            return;
+        }
+        else {
+            userService.delete(userService.getUser("junit").getId());
+            Assert.assertNull(userService.getUser("junit"));
+        }
     }
 
     @Test
@@ -64,5 +96,16 @@ public class IndexControllerTest {
         this.mockMvc.perform(get("/register"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("register"));
+
+        User testUser = new User();
+
+        testUser.setUsername("junit");
+        testUser.setPassword("junit");
+        testUser.setEnabled(true);
+        //Save test
+        Assert.assertNull(userService.getUser("junit"));
+        userService.save(testUser);
+        Assert.assertNotNull(userService.getUser("junit"));
+
     }
 }
