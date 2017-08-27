@@ -16,6 +16,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import ru.danileyko.aop.LoggingTimeExecution;
 import ru.danileyko.model.Category;
 import ru.danileyko.model.Comment;
 import ru.danileyko.model.Photo;
@@ -63,6 +64,7 @@ public class IndexController {
     @Autowired
     private CommentService commentService;
 
+    @LoggingTimeExecution
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String showIndexPage(ModelMap modelMap)
     {

@@ -80,7 +80,7 @@ public class IndexControllerTest {
         this.mockMvc.perform(get("/admin").header("host", "localhost:80"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("admin"));
-
+        //check delete user
         if(userService.getUser("junit")==null){
             System.out.println("User not found!");
             return;
@@ -89,6 +89,11 @@ public class IndexControllerTest {
             userService.delete(userService.getUser("junit").getId());
             Assert.assertNull(userService.getUser("junit"));
         }
+        //check enable/disable user
+        userService.userLock(userService.getUser("test10").getId());
+        Assert.assertEquals(false,userService.getUser("test10").isEnabled());
+        userService.userUnLock(userService.getUser("test10").getId());
+        Assert.assertEquals(true,userService.getUser("test10").isEnabled());
     }
 
     @Test

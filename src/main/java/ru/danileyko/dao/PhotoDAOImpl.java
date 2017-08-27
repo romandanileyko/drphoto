@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import ru.danileyko.aop.LoggingTimeExecution;
 import ru.danileyko.model.Photo;
 import ru.danileyko.model.User;
 
@@ -28,6 +29,7 @@ public class PhotoDAOImpl implements PhotoDAO {
     }
 
     //Get logget user's photo.
+    @LoggingTimeExecution
     @Override
     @SuppressWarnings("unchecked")
     public List<Photo> getPhoto(User user) {
@@ -40,7 +42,7 @@ public class PhotoDAOImpl implements PhotoDAO {
         else
             return null;
     }
-
+    @LoggingTimeExecution
     @Override
     public Photo getPhotoById(int id) {
         List<Photo> onePhoto = new ArrayList<>();

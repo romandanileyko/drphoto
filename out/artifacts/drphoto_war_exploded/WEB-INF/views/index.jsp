@@ -62,7 +62,7 @@
 
     <button id="login" type="submit" name="submit" value="login" class="btn btn-primary">Login</button>
     <a href="/logout" id="logout">LogOut</a>
-    <a href="register">Регистрация</a>
+    <a href= "<spring:url value="/register"/>">Регистрация</a>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <c:if test="${param.error != null}">
       <p>

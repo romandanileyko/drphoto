@@ -47,7 +47,7 @@
         <div class="col-md-3 col-sm-4 col-xs-6">
             <figure style="float: left">
                 <img alt="${photo[obj.index].name}"  src="data:image/jpg;base64,<c:out value='${listPhoto}'/>" width="300" height="200" class="img-rounded" />
-                <figcaption><a href="/delete" id="${photo[obj.index].id}">Удалить</a> </figcaption>
+                <figcaption><a href=<spring:url value="/delete"/> id="${photo[obj.index].id}">Удалить</a> </figcaption>
             </figure>
         </div>
     </c:forEach>
