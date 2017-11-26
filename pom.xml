@@ -7,6 +7,7 @@
     <groupId>ru.danileyko</groupId>
     <artifactId>drphoto</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <build>
         <plugins>
